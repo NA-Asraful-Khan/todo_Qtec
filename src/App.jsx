@@ -1,12 +1,17 @@
+import { CustomForm } from "./components/CustomForm"
 
 function App() {
-
+  const addTask = (task)=>{
+    console.log(task)
+  }
+ 
   return (
-    <>
-      <h1 className="text-xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
+    <div className="container"> 
+    <header>
+      <h1>My Task List</h1>
+    </header>
+        <CustomForm addTask = {addTask}></CustomForm>
+    </div>
   )
 }
 
